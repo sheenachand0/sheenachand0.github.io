@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
- <!--Sheena Chand-->
+  <!--Sheena Chand-->
+
   <head>
     <title>Mental Health in the NBA</title>
-        <style>
+    <style>
       body {
-        background-color:pink;
-        color:blue;
+        background-color: pink;
+        color: blue;
         font-family: times new roman;
       }
+
     </style>
   </head>
 
