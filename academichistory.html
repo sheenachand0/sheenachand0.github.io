@@ -2,21 +2,88 @@
 <html>
 
   <head>
-  <style>
-  table, th, td {
- border: 2.5px solid pink;
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      
+      .header,
+      .footer {
+        background-color:pink;
+        color: black;
+        padding: 15px;
+      }
+      
+      .column {
+        float: left;
+        padding: 15px;
+      }
+      
+      .column img {
+        float: left;
+      }
+      
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .menu {
+        width: 20%;
+      }
+      
+      .content {
+        width: 80%;
+      }
+      
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color:pink;
+        color: black;
+      }
+      
+      .menu li:hover {
+        background-color: pink;
+      }
+      
+       table, th, td {
+ 		border: 2.5px solid pink;
   }
-  </style>
-    <title>academichistory</title>
+    </style>
   </head>
-  <h1>Academic History at Enver Creek Secondary</h1>
-
+  
   <body>
+  
+    <div class="header">
+      <h1>Electronic Portfolio</h1>
+      <h2>Sheena Chand</h2>
+    </div>
+    
+    <div class="clearfix">
+      <div class="column menu">
+        <ul>
+          <li><a href="sheenachand0.github.io/contact.html">Contact Information</a></li>
+          <li><a href="sheenachand0.github.io/academichistory.html">Academic History</a></li>
+          <li><a href="sheenachand0.github.io/volunteer_accomplishments.html">Volunteer Work/Accomplishments</a></li>
+        </ul>
+      </div>
+      
+      <div class="column content">
+        <body>
     <table style="width:80%">
     
       <tr>
-        <th>Sheena</th>
-        <th>Chand</th>
+        <th>Class</th>
+        <th>Grade</th>
       </tr>
       <hr>
       <tr>
@@ -48,6 +115,25 @@
         <td>B</td>
       </tr>
     </table>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Footer Text</p>
+    </div>
+    
   </body>
-
-</html>
+  
+</html> 
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
