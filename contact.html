@@ -1,20 +1,83 @@
+
 <!DOCTYPE html>
 <html>
 
   <head>
     <style>
-      body {
-        background-color: pink;
-        color: black;
-        font-family: times new roman;
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
       }
-
+      
+      .header,
+      .footer {
+        background-color:pink;
+        color: black;
+        padding: 15px;
+      }
+      
+      .column {
+        float: left;
+        padding: 15px;
+      }
+      
+      .column img {
+        float: right;
+      }
+      
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .menu {
+        width: 80%;
+      }
+      
+      .content {
+        width: 25%;
+      }
+      
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color:pink;
+        color: black;
+      }
+      
+      .menu li:hover {
+        background-color: pink;
+      }
+      
     </style>
-    <title>Contact Info</title>
   </head>
-
+  
   <body>
-    <h1>
+  
+    <div class="header">
+      <h1>Electronic Portfolio</h1>
+      <h2>Sheena Chand</h2>
+    </div>
+    
+    <div class="clearfix">
+      <div class="column menu">
+        <ul>
+          <li><a href="sheenachand0.github.io/contact.html">Contact Information</a></li>
+          <li><a href="sheenachand0.github.io/academichistory.html">Academic History</a></li>
+          <li><a href="sheenachand0.github.io/volunteer_accomplishments.html">Volunteer Work/Accomplishments</a></li>
+        </ul>
+      </div>
+      
+      <div class="column content">
+        <img
+  <h1>
       Contact Information
     </h1>
     <P>
@@ -23,6 +86,14 @@
       <strong>Email:</strong>sheena.chand2001@hotmail.com </p>
     <p>
       <strong>Address:</strong> 12457 88ave V3W G8D</p>
-  </body>
 
-</html>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Footer Text</p>
+    </div>
+    
+  </body>
+  
+</html> 
