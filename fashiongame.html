@@ -1,0 +1,112 @@
+//Variables for each challenge/
+let shoes = false; //New York
+let bag = false; //California
+let jewel = false; //London
+let plant = false; //Toronto
+let dress = false; //Paris
+
+//Player name
+let name = "";
+
+
+
+alert("Welcome to Vancouver!");
+let gameStart = prompt("Do you wish to play? YES OR NO").toUpperCase();
+if (gameStart === "YES") {
+  alert("Welcome to YVR!");
+  name = prompt("What would you like us to call you?");
+  beginning();
+} else if (gameStart === 'NO') {
+  alert("Too bad " + name + ", see you later!")
+} else {
+  alert("I don't understand " + gameStart + ", please enter either YES or NO");
+  startGame();
+}
+
+//Sets up the game and gives an introduction.
+function beginning() {
+  alert("Hello, " + name + ", welcome to Vancouver!");
+  alert("You have been hired to work for Ms.Couture, the leading editor of Vancouver Fashion Magazine, the number one fashion magazine on the west coast!");
+  alert("You first task is to collect items for Ms.Couture's upcoming Sepember issue.");
+  alert("Ms.Couture is planning on doing a spread on her favourite things this season, so she's going to want you to collect some odd items.");
+  if (confirm("Are you ready?")) {
+    alert("Fantastic! We look forward to working with you!");
+    alert("Your first flight leaves for Toronto tomorrow morning at 6AM. You better be ready!");
+    alert("You will be looking for a very unique plant! I hope you can find it!");
+    toronto();
+  } else {
+    alert("Maybe you're just not ready for this job.");
+    gameStart();
+  }
+}
+
+//Create a level for Toronto.
+function toronto() {
+  alert("Welcome to Toronto!");
+  alert("The city is bustling with activity and you are not quite sure where to start.");
+  alert("You flag down the first Taxi that you see.");
+  alert("Where to?")
+  let torontoChoices = prompt("You have the following choices: Market, Bloor Street, or High Park").toUpperCase();
+  switch (torontoChoices) {
+    case "MARKET":
+      alert("There are three different stalls with plants, you are specifically looking for the Twin flower."); //What happens in the market?
+      alert("Stall one is filled with mostly dead flowers, stall two has a couple flowers, but mostly vegetables. Stall three is filled with gigantic pots of flowers.");
+      let marketChoices = prompt("Would you like to visit STALL ONE, STALL TWO, STALL THREE, OR MOVE ON?").toUpperCase();
+      if (marketChoices === "STALL ONE") {
+        alert("Oh no! there are no twin flowers here!");
+        if (marketChoices === "STALL TWO"){
+        alert("Theres nothing but vegetables here! Where did the flowers go?");
+        if(marketChoices ==="STALL THREE"){
+        alert("This stall is filled with flowers! But not the twin flower.");
+        }
+        if(marketChoices ==="MOVE ON"){
+        alert("");
+        }
+        }
+      }
+      break;
+    case "BLOOR STREET":
+      alert(""); //What happens on Bloor?
+      break;
+    case "HIGH PARK":
+      alert("") //What happens at High Park?
+      //write a lot of stuff here. 
+
+
+
+
+
+
+
+
+      plant = true;
+
+      break;
+    default:
+      toronto();
+  }
+}
+
+
+
+
+
+//Create a level for California.
+function california() {
+
+}
+
+//Create a level for NY.
+function newYork() {
+
+}
+
+//Create a level for London.
+function london() {
+
+}
+
+//Create a level for Paris.
+function paris() {
+
+}
