@@ -51,25 +51,24 @@ function toronto() {
     case "MARKET":
       alert("There are three different stalls with plants, you are specifically looking for the Twin flower."); //What happens in the market?
       alert("Stall one is filled with mostly dead flowers, stall two has a couple flowers, but mostly vegetables. Stall three is filled with gigantic pots of flowers.");
-      let marketChoices = prompt("Would you like to visit STALL ONE, STALL TWO, STALL THREE, OR MOVE ON?").toUpperCase();
-      if (marketChoices === "STALL ONE") {
+      let marketChoicesTwo = prompt("Would you like to visit STALL ONE, STALL TWO, STALL THREE, OR MOVE ON?").toUpperCase();
+      if (marketChoicesTwo === "STALL ONE") {
         alert("Oh no! there are no twin flowers here!");
-        if (marketChoices === "STALL TWO"){
+      } else if (marketChoicesTwo === "STALL TWO") {
         alert("Theres nothing but vegetables here! Where did the flowers go?");
-        if(marketChoices ==="STALL THREE"){
-        alert("This stall is filled with flowers! But not the twin flower.");
-        }
-        if(marketChoices ==="MOVE ON"){
-        alert("");
-        }
-        }
+      } else if (marketChoicesTwo === "STALL THREE") {
+        alert("This stall is filled with flowers! But not the twin flower..");
+      } else if (marketChoicesTwo === "MOVE ON") {
+       let torontoChoices = prompt("You have the following choices: Market, Bloor Street, or High Park").toUpperCase();
       }
+
       break;
     case "BLOOR STREET":
-      alert(""); //What happens on Bloor?
+      alert("There are no flower shops in sight here!"); //What happens on Bloor?
       break;
     case "HIGH PARK":
-      alert("") //What happens at High Park?
+      alert("High Park is so beautiful! Theres all types of flowers here.") 
+      alert("The twin flower is so hard to spot, there are trails and forests")
       //write a lot of stuff here. 
 
 
